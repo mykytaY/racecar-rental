@@ -1,0 +1,40 @@
+body,html
+{
+    height: 100vh;
+    min-width: 100%;
+    background-image: url('car.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body>h1
+{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Audiowide', cursive;
+    color: rgb(230, 56, 56);
+}
+h3
+{
+    color: rgb(230, 56, 56);
+}
+#tables
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Audiowide', cursive;
+    background-color: rgba(253, 241, 224, 0.712);
+}
+#carsTable
+{
+    width: 60%;
+}
+#driversTable
+{
+    width: 60%;
+}
+#tracksTable
+{
+    width: 60%;
+}

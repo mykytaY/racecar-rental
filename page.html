@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Race Car Rental</title>
+    <script src="cars.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Race Car Rental</h1>
+    <div id="tables">
+        <div id="driversTable">
+            <h3>Drivers</h3>
+            <form id="newDriver">
+                <label for="FirstName">First Name</label><input name="FirstName" type="text" required>
+                <label for="LastName">Last Name</label><input name="LastName" type="text" required>
+                <label for="Email">Email</label><input name="Email" type="email" required>
+                <label for="Experience_Years">Driving Experience Years</label><input name="Experience_Years" type="number" required>
+                <label for="AdditionalTraining">Additional Training (specify)</label><input name="AdditionalTraining" type="text">
+                <button id="btnNewDriver">Submit</button>
+            </form>
+        </div>
+    <div id="carsTable">
+        <h3>Cars</h3>
+        <form id="newCar">
+            <label for="Year">Year</lable><input name="Year" type="number">
+            <label for="Make">Make</label><input name="Make" type="text" required>
+            <label for="Model">Model</label><input name="Model" type="text" required>
+            <label for="Type">Type</label><select name="Type">
+                    <option value="Street Car">Street Car</option>
+                    <option value="Sports Car">Sports Car</option>
+                    <option value="Super Car">Super Car</option>
+                    <option value="Off-Road">Off-Road</option>
+                    <option value="SUV">SUV</option>
+                </select>
+            <label for="Horse_Power">Horse Power</label><input name="Horse_Power" type="number">
+            <label for="Top_Speed">Top Speed</label><input name="Top_Speed" type="number">
+            <label for="Transmission">Transmission</label><select name="Transmission">
+                    <option value="5-speed man">5-speed manual</option>
+                    <option value="6-speed man">6-speed manual</option>
+                    <option value="5-speed auto">5-speed auto</option>
+                    <option value="6-speed auto">6-speed auto</option>
+                    <option value="7-speed auto">7-speed auto</option>
+                    <option value="8-speed auto">8-speed auto</option>
+                    <option value="10-speed auto">10-speed auto</option>
+                </select>
+            <label for="DriveTrain">Drive Train</label><select name="DriveTrain">
+                    <option value="FWD">FWD</option>
+                    <option value="RWD">RWD</option>
+                    <option value="AWD">AWD</option>
+                    <option value="4x4">4x4</option>
+                    <option value="6x6">6x6</option>
+                </select>
+            <button id="btnNewCar">Submit</button>
+        </form>
+    </div>
+    <div id="tracksTable">
+        <h3>Race Tracks</h3>
+        <form id="newTrack">
+            <label for="Track_Name">Track Name</label><input name ="Track_Name" type="text" required>
+            <label for="Type">Type</label><select name ="Type">
+                    <option value="Race Track">Race Track</option>
+                    <option value="Off-Road Track">Off-Road Track</option>
+                    <option value="Drag">Drag</option>
+                    <option value="Circle">Circle</option>
+                </select>
+            <label for="City">City</label><input name ="City" type="text">
+            <label for="Country">Country</label><input name ="Country" type="text" required>
+            <label for="Distance">Length</label><input name ="Distance" type="text">
+            <button id="btnNewTrack">Submit</button>
+        </form>
+    </div>
+    
+    </div>
+</body>
+</html>
